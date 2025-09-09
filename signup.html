@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>নিবন্ধন - ডিজিটাল ফার্মিং</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="logo2.png" alt="Kheti Bondhu Logo" class="header-logo">
+            </a>
+            <h1>KhetiBondhu</h1>
+        </div>
+        <nav>
+        </nav>
+
+        <nav>
+            <a href="signin.html" class="btn">লগইন করুন</a>
+            <a href="signup.html" class="btn">নিবন্ধন করুন</a>
+            <a href="http://localhost:8501/" class="btn">কৃষি সহায়ক বট</a>
+        </nav>
+    </header>
+
+
+    <div class="form-container">
+        <form id="signupForm">
+            <h2>অ্যাকাউন্ট তৈরি করুন</h2>
+            <input type="text" id="fullName" placeholder="পুরো নাম" required>
+            <input type="text" id="mobile" placeholder="মোবাইল নম্বর" required>
+
+            <select id="division" required>
+                <option value="">বিভাগ নির্বাচন করুন</option>
+                <option value="Dhaka">ঢাকা</option>
+                <option value="Chattogram">চট্টগ্রাম</option>
+                <option value="Khulna">খুলনা</option>
+                <option value="Rajshahi">রাজশাহী</option>
+                <option value="Barishal">বরিশাল</option>
+                <option value="Sylhet">সিলেট</option>
+                <option value="Mymensingh">ময়মনসিংহ</option>
+                <option value="Rangpur">রংপুর</option>
+            </select>
+
+            <select id="district" required>
+                <option value="">জেলা নির্বাচন করুন</option>
+            </select>
+            <input type="text" id="upazila" placeholder="উপজেলা" required>
+
+            <input type="password" id="password" placeholder="পাসওয়ার্ড" required>
+            <input type="password" id="rePassword" placeholder="পুনরায় পাসওয়ার্ড দিন" required>
+
+            <button type="submit">নিবন্ধন করুন</button>
+            <p>ইতিমধ্যে কি আপনার একটি অ্যাকাউন্ট আছে? <a href="signin.html">লগইন করুন</a></p>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
