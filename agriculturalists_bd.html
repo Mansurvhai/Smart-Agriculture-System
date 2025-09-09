@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bangladesh Agriculturalists – Dummy List (100)</title>
+  <style>
+    :root {
+      --bg: #1eae2d;
+      --card: #289862;
+      --text: #e6eef9;
+      --muted: #9fb3c8;
+      --acc: #4da3ff;
+      --chip1: #1e2a40;
+      --chip2: #1a3a2a;
+    }
+
+    html,
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji';
+      margin: 0;
+    }
+
+    .wrap {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 16px;
+    }
+
+    .card {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02)), var(--card);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      padding: 24px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin: 0 0 10px 0;
+      letter-spacing: 0.2px;
+    }
+
+    .sub {
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
+    .chips {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
+    }
+
+    .chip {
+      font-size: 12px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: var(--chip1);
+      color: var(--muted);
+    }
+
+    .controls {
+      display: grid;
+      grid-template-columns: 1fr 180px;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    input[type="search"],
+    select {
+      background: #0e1729;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: var(--text);
+      padding: 10px 12px;
+      border-radius: 10px;
+      font-size: 14px;
+      outline: none;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    thead th {
+      text-align: left;
+      font-size: 12px;
+      color: var(--muted);
+      font-weight: 600;
+      letter-spacing: .08em;
+      padding: 10px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    tbody td {
+      padding: 12px 10px;
+      border-bottom: 1px dashed rgba(255, 255, 255, 0.06);
+    }
+
+    tbody tr:hover {
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 4px 8px;
+      font-size: 12px;
+      border-radius: 999px;
+      background: #11263c;
+      border: 1px solid rgba(77, 163, 255, 0.35);
+      color: var(--acc);
+    }
+
+    .foot {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .export {
+      margin-top: 14px;
+      display: inline-block;
+      background: #133a63;
+      border: 1px solid rgba(77, 163, 255, 0.5);
+      color: #dbeaff;
+      padding: 10px 14px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Bangladesh Agriculturalists</h1>
+      <div class="sub">A ready-to-use HTML directory. First 15 are <span class="badge">Real</span> (publicly known); the
+        rest are <span class="badge">Fictional</span> placeholders for prototyping.</div>
+      <div class="chips">
+        <span class="chip">Category: Real / Fictional</span>
+        <span class="chip">Sectors: Crops · Livestock · Fisheries · Policy · Engineering</span>
+        <span class="chip">Use: Demo · Mockups · Teaching</span>
+      </div>
+      <div class="controls">
+        <input id="q" type="search" placeholder="Search by name, role, or institution…" />
+        <select id="filter">
+          <option value="all">Show: All</option>
+          <option value="Real">Show: Real</option>
+          <option value="Fictional (dummy)">Show: Fictional</option>
+        </select>
+      </div>
+      <table id="tbl">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Role / Affiliation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Munshi Siddique Ahmad</td>
+            <td><span class='badge'>Real</span></td>
+            <td>Rice genetics pioneer, BRRI</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Jahangir Alam Khan</td>
+            <td><span class='badge'>Real</span></td>
+            <td>Agricultural economist, former DG BLRI</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Zeba Islam Seraj</td>
+            <td><span class='badge'>Real</span></td>
+            <td>Biotechnologist, University of Dhaka</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Md. Tofazzal Islam</td>
+            <td><span class='badge'>Real</span></td>
+            <td>Molecular biologist, wheat blast research</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Shykh Seraj</td>
+            <td><span class='badge'>Real</span></td>
+            <td>Agri journalist & development activist</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Arif Hossain</td>
+            <td><span class='badge'>Real</span></td>
+            <td>CEO, Farming Future Bangladesh</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Anwar Faruque</td>
+            <td><span class='badge'>Real</span></td>
+            <td>Policy advisor, ex‑civil service</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Jiban Krishna Biswas</td>
+            <td><span class='badge'>Real</span></td>
+            <td>Former DG, BRRI; Executive Director, KGF</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Md. Mahbubur Rahman</td>
+            <td><span class='badge'>Real</span></td>
+            <td>Food policy & FPMU leadership</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>Shaikh Mohammad Bokhtiar</td>
+            <td><span class='badge'>Real</span></td>
+            <td>Executive Chairman, BARC</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>Md. Saiful Islam</td>
+            <td><span class='badge'>Real</span></td>
+            <td>Soil scientist, PSTU</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>Muhammad Zakaria Hossain</td>
+            <td><span class='badge'>Real</span></td>
+            <td>Agricultural engineer, BARI</td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>Md. Nurul Haque Mollah</td>
+            <td><span class='badge'>Real</span></td>
+            <td>Statistical bioinformatics, RU</td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>Anup Kumar Mandal</td>
+            <td><span class='badge'>Real</span></td>
+            <td>Agricultural economics, PSTU</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>Abed Chowdhury</td>
+            <td><span class='badge'>Real</span></td>
+            <td>Panchabrihi rice technique (media-reported)</td>
+          </tr>
+          <tr>
+            <td>16</td>
+            <td>Rahima Akter</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Plant breeder, BARI</td>
+          </tr>
+          <tr>
+            <td>17</td>
+            <td>Mostafa Kamal</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Soil fertility specialist, BAU</td>
+          </tr>
+          <tr>
+            <td>18</td>
+            <td>Nusrat Jahan</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Agri‑economist, JU</td>
+          </tr>
+          <tr>
+            <td>19</td>
+            <td>Farid Rahman</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Irrigation systems, BADC</td>
+          </tr>
+          <tr>
+            <td>20</td>
+            <td>Salma Parvin</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Dairy technology, BLRI</td>
+          </tr>
+          <tr>
+            <td>21</td>
+            <td>Kamrul Hossain</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Entomology, BARI</td>
+          </tr>
+          <tr>
+            <td>22</td>
+            <td>Nasima Akhter</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Fish nutrition, FR Institute</td>
+          </tr>
+          <tr>
+            <td>23</td>
+            <td>Arifur Rahman</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Agri economics, FPMU</td>
+          </tr>
+          <tr>
+            <td>24</td>
+            <td>Laila Begum</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Agronomy, BAU</td>
+          </tr>
+          <tr>
+            <td>25</td>
+            <td>Hasanuzzaman</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Seed technology, BARI</td>
+          </tr>
+          <tr>
+            <td>26</td>
+            <td>Nurul Islam</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Crop physiology, SAU</td>
+          </tr>
+          <tr>
+            <td>27</td>
+            <td>Mahbubur Rahman</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Agro‑machinery, BARI</td>
+          </tr>
+          <tr>
+            <td>28</td>
+            <td>Tahmina Rahman</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Post‑harvest, BARI</td>
+          </tr>
+          <tr>
+            <td>29</td>
+            <td>Imran Hossain</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Biotech research, DU</td>
+          </tr>
+          <tr>
+            <td>30</td>
+            <td>Farzana Karim</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Environmental agronomy, HSTU</td>
+          </tr>
+          <tr>
+            <td>31</td>
+            <td>Rezaul Karim</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Agricultural economics, PSTU</td>
+          </tr>
+          <tr>
+            <td>32</td>
+            <td>Mehmood Ali</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Sugarcane R&D, BSRI</td>
+          </tr>
+          <tr>
+            <td>33</td>
+            <td>Rasheda Begum</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Seed certification, BADC</td>
+          </tr>
+          <tr>
+            <td>34</td>
+            <td>Ayesha Siddiqua</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Microbiology, BAU</td>
+          </tr>
+          <tr>
+            <td>35</td>
+            <td>SH Mamun</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Agri climatology, BARC</td>
+          </tr>
+          <tr>
+            <td>36</td>
+            <td>Jahanara Khatun</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Fish genetics, FR Institute</td>
+          </tr>
+          <tr>
+            <td>37</td>
+            <td>Mizanur Rahman</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Agribusiness, DU</td>
+          </tr>
+          <tr>
+            <td>38</td>
+            <td>Kabir Hossain</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Soil & water conservation, BARI</td>
+          </tr>
+          <tr>
+            <td>39</td>
+            <td>Shahana Rahman</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Farm mechanization consultant</td>
+          </tr>
+          <tr>
+            <td>40</td>
+            <td>Kamruzzaman</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Agri extension, BARD</td>
+          </tr>
+          <tr>
+            <td>41</td>
+            <td>Sumaiya Islam</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Crop disease, SAU</td>
+          </tr>
+          <tr>
+            <td>42</td>
+            <td>Zulfiqar Ali</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Horticulture, BARI</td>
+          </tr>
+          <tr>
+            <td>43</td>
+            <td>Farid Ahmed</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Rice pathology, BRRI</td>
+          </tr>
+          <tr>
+            <td>44</td>
+            <td>Rubina Yasmin</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Agricultural economics, BAU</td>
+          </tr>
+          <tr>
+            <td>45</td>
+            <td>Najma Akhter</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Seed pathology, BARC</td>
+          </tr>
+          <tr>
+            <td>46</td>
+            <td>Shafi Ullah</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Greenhouse systems, DU</td>
+          </tr>
+          <tr>
+            <td>47</td>
+            <td>Lutfun Nahar</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Policy analysis, FPMU</td>
+          </tr>
+          <tr>
+            <td>48</td>
+            <td>Rafiq Hasan</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Agro‑meteorology, BARI</td>
+          </tr>
+          <tr>
+            <td>49</td>
+            <td>Sharmin Akter</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Agri communications, FFB</td>
+          </tr>
+          <tr>
+            <td>50</td>
+            <td>Imtiaz Islam</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Fisheries economics, FR Institute</td>
+          </tr>
+          <tr>
+            <td>51</td>
+            <td>Nazrul Islam</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Sustainable ag systems, BARI</td>
+          </tr>
+          <tr>
+            <td>52</td>
+            <td>Rehana Sultana</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Aquaculture, FR Institute</td>
+          </tr>
+          <tr>
+            <td>53</td>
+            <td>Kamal Hossain</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Precision ag, PSTU</td>
+          </tr>
+          <tr>
+            <td>54</td>
+            <td>Sadia Rahman</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Soil microbiology, BAU</td>
+          </tr>
+          <tr>
+            <td>55</td>
+            <td>Manzur Rahman</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Climate resilient crops, BARI</td>
+          </tr>
+          <tr>
+            <td>56</td>
+            <td>Nahid Hasan</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Organic agronomy, BARI</td>
+          </tr>
+          <tr>
+            <td>57</td>
+            <td>Tauhidul Islam</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Farm systems modeling, BARC</td>
+          </tr>
+          <tr>
+            <td>58</td>
+            <td>Nazneen Sultana</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Gender & extension, BARD</td>
+          </tr>
+          <tr>
+            <td>59</td>
+            <td>Russell Khan</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Animal nutrition, BLRI</td>
+          </tr>
+          <tr>
+            <td>60</td>
+            <td>Samina Rahman</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Integrated pest management, BARI</td>
+          </tr>
+          <tr>
+            <td>61</td>
+            <td>Shamsul Alam</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Agricultural economics, BAU</td>
+          </tr>
+          <tr>
+            <td>62</td>
+            <td>Niaz Morshed</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Seed quality, BADC</td>
+          </tr>
+          <tr>
+            <td>63</td>
+            <td>Sultana Akter</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Crop physiology, PSTU</td>
+          </tr>
+          <tr>
+            <td>64</td>
+            <td>Rezaul Karim (Data Science)</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Agri data science, DU</td>
+          </tr>
+          <tr>
+            <td>65</td>
+            <td>Taslima Banu</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Post‑harvest engineering, SAU</td>
+          </tr>
+          <tr>
+            <td>66</td>
+            <td>Bishwajit Roy</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Aquatic ecology, FR Institute</td>
+          </tr>
+          <tr>
+            <td>67</td>
+            <td>Nafisa Rahim</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Crop modeling, HSTU</td>
+          </tr>
+          <tr>
+            <td>68</td>
+            <td>Aftab Uddin</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Soil conservation, BAU</td>
+          </tr>
+          <tr>
+            <td>69</td>
+            <td>Sidra Parveen</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Ag biotech, BARI</td>
+          </tr>
+          <tr>
+            <td>70</td>
+            <td>Rakib Hasan</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Water management, BADC</td>
+          </tr>
+          <tr>
+            <td>71</td>
+            <td>Jamil Ahmed</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Farm power, BARI</td>
+          </tr>
+          <tr>
+            <td>72</td>
+            <td>Naila Khan</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Agri‑extension, FPMU</td>
+          </tr>
+          <tr>
+            <td>73</td>
+            <td>Sohel Rana</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Crop genetics, DU</td>
+          </tr>
+          <tr>
+            <td>74</td>
+            <td>Fahima Rahman</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Sustainable livestock, BLRI</td>
+          </tr>
+          <tr>
+            <td>75</td>
+            <td>Iqbal Hasan</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Bio‑fertilizer R&D, BARI</td>
+          </tr>
+          <tr>
+            <td>76</td>
+            <td>Saira Akhtar</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Climate‑smart agriculture, PSTU</td>
+          </tr>
+          <tr>
+            <td>77</td>
+            <td>Mustafa Kamal (Agro‑ecology)</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Agro‑ecology, BAU</td>
+          </tr>
+          <tr>
+            <td>78</td>
+            <td>Amina Sultana</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Fisheries nutrition, FR Institute</td>
+          </tr>
+          <tr>
+            <td>79</td>
+            <td>Kamrul Islam (Econ)</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Agri economics, BARI</td>
+          </tr>
+          <tr>
+            <td>80</td>
+            <td>Shirin Akter</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Irrigation engineering, SAU</td>
+          </tr>
+          <tr>
+            <td>81</td>
+            <td>Nazia Parveen</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Crop pathology, BARI</td>
+          </tr>
+          <tr>
+            <td>82</td>
+            <td>Shariful Islam</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Remote sensing, HSTU</td>
+          </tr>
+          <tr>
+            <td>83</td>
+            <td>Sumon Karim</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Soil chemistry, DU</td>
+          </tr>
+          <tr>
+            <td>84</td>
+            <td>Nusrat Parvin</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Organic agriculture, PSTU</td>
+          </tr>
+          <tr>
+            <td>85</td>
+            <td>Farzana Islam</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Greenhouse engineering, BARI</td>
+          </tr>
+          <tr>
+            <td>86</td>
+            <td>Rashed Ahmed</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Agri‑machinery, BARC</td>
+          </tr>
+          <tr>
+            <td>87</td>
+            <td>Tasnim Sultana</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Seed science, BAU</td>
+          </tr>
+          <tr>
+            <td>88</td>
+            <td>Kamrul Haque</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Crop bioinformatics, DU</td>
+          </tr>
+          <tr>
+            <td>89</td>
+            <td>Nahid Islam</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Dairy engineering, BLRI</td>
+          </tr>
+          <tr>
+            <td>90</td>
+            <td>Sofia Rahman</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Agricultural policy, FPMU</td>
+          </tr>
+          <tr>
+            <td>91</td>
+            <td>Mizan Khan</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Climate impact analysis, HSTU</td>
+          </tr>
+          <tr>
+            <td>92</td>
+            <td>Firoz Ahmed</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Entomology, BARI</td>
+          </tr>
+          <tr>
+            <td>93</td>
+            <td>Tanima Akter</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Aquaculture systems, FR Institute</td>
+          </tr>
+          <tr>
+            <td>94</td>
+            <td>Sabbir Hassan</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Agricultural development, BARC</td>
+          </tr>
+          <tr>
+            <td>95</td>
+            <td>Aminul Hoque</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Postharvest tech, BARI</td>
+          </tr>
+          <tr>
+            <td>96</td>
+            <td>Tania Sultana</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Horticulture systems, BARI</td>
+          </tr>
+          <tr>
+            <td>97</td>
+            <td>Habibur Rahman</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Ag meteorology, BMD</td>
+          </tr>
+          <tr>
+            <td>98</td>
+            <td>Meherun Nesa</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Agroforestry, BAU</td>
+          </tr>
+          <tr>
+            <td>99</td>
+            <td>Sayedur Rahman</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Livestock extension, DLS</td>
+          </tr>
+          <tr>
+            <td>100</td>
+            <td>Rumana Akhter</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Food safety, BFSA</td>
+          </tr>
+          <tr>
+            <td>101</td>
+            <td>Ashikur Rahman</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Agri ICT, BARC</td>
+          </tr>
+          <tr>
+            <td>102</td>
+            <td>Mahia Islam</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Nutrition‑sensitive ag, MoH&FW</td>
+          </tr>
+          <tr>
+            <td>103</td>
+            <td>Tarikul Islam</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Irrigation modeling, BADC</td>
+          </tr>
+          <tr>
+            <td>104</td>
+            <td>Fatema Khatun</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Rural finance, PKSF</td>
+          </tr>
+          <tr>
+            <td>105</td>
+            <td>Biplob Kumar</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Seed systems, BADC</td>
+          </tr>
+          <tr>
+            <td>106</td>
+            <td>Shaila Parvin</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Value chains, DAM</td>
+          </tr>
+          <tr>
+            <td>107</td>
+            <td>Towhid Hossain</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>GIS for ag, BARC</td>
+          </tr>
+          <tr>
+            <td>108</td>
+            <td>Mahmudul Hasan</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Mechanization policy, MoA</td>
+          </tr>
+          <tr>
+            <td>109</td>
+            <td>Mouri Akter</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Agri education, NAEM</td>
+          </tr>
+          <tr>
+            <td>110</td>
+            <td>Rukaiya Sultana</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Women in ag, BARD</td>
+          </tr>
+          <tr>
+            <td>111</td>
+            <td>Atiqur Rahman</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Poultry systems, BLRI</td>
+          </tr>
+          <tr>
+            <td>112</td>
+            <td>Nabila Khan</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Ag exports, EPB</td>
+          </tr>
+          <tr>
+            <td>113</td>
+            <td>Sohag Mia</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Postharvest loss, MoA</td>
+          </tr>
+          <tr>
+            <td>114</td>
+            <td>Rojina Begum</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Agri statistics, BBS</td>
+          </tr>
+          <tr>
+            <td>115</td>
+            <td>Pijush Kanti</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Coastal salinity, SRDI</td>
+          </tr>
+          <tr>
+            <td>116</td>
+            <td>Shahina Yasmin</td>
+            <td><span class='badge'>Fictional (dummy)</span></td>
+            <td>Fisheries value chains, DoF</td>
+          </tr>
+          <tr>
+            <td>117</td>
+            <td>Ridwan Ahmed</td>
+            <td><span class='badge'>Fictional </span></td>
+            <td>Agri entrepreneur, SMEF</td>
+          </tr>
+          <tr>
+            <td>118</td>
+            <td>Tanzila Rahman</td>
+            <td><span class='badge'>Fictional </span></td>
+            <td>Extension training, DAE</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="foot">Tip: Press <b>Ctrl/⌘ + F</b> to find quickly. You can copy this file into any website or open it
+        directly.</div>
+    </div>
+  </div>
+  <script>
+    const q = document.getElementById('q');
+    const filter = document.getElementById('filter');
+    const tbody = document.querySelector('#tbl tbody');
+    function applyFilter() {
+      const term = q.value.toLowerCase().trim();
+      const cat = filter.value;
+      for (const tr of tbody.querySelectorAll('tr')) {
+        const t = tr.innerText.toLowerCase();
+        const c = tr.children[2].innerText;
+        const matchTerm = term === '' || t.includes(term);
+        const matchCat = cat === 'all' || c === cat;
+        tr.style.display = (matchTerm && matchCat) ? '' : 'none';
+      }
+    }
+    q.addEventListener('input', applyFilter);
+    filter.addEventListener('change', applyFilter);
+  </script>
+</body>
+
+</html>
