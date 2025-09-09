@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ব্যবহারকারীর প্রোফাইল - ডিজিটাল ফার্মিং</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="logo2.png" alt="ক্ষেতি বন্ধু লোগো" class="header-logo">
+            </a>
+        </div>
+        <nav>
+            <a href="dashboard.html" class="btn">ড্যাশবোর্ড</a>
+            <button id="logoutBtn" class="btn">লগ আউট</button>
+        </nav>
+    </header>
+
+    <section class="container profile-container">
+        <h2>আমার প্রোফাইল</h2>
+        <div class="profile-card">
+            <img id="profilePhoto" src="https://via.placeholder.com/120" alt="প্রোফাইল ছবি">
+            <div class="profile-info">
+                <h3 id="profileName"></h3>
+                <p><b>মোবাইল:</b> <span id="profileMobile"></span></p>
+                <p><b>উপজেলা:</b> <span id="profileUpazila"></span></p>
+                <p><b>জেলা:</b> <span id="profileDistrict"></span></p>
+                <p><b>বিভাগ:</b> <span id="profileDivision"></span></p>
+            </div>
+
+            <div class="profile-picture-upload">
+                <label for="profileImageInput" class="btn">ছবি পরিবর্তন করুন</label>
+                <input type="file" id="profileImageInput" accept="image/*" style="display: none;">
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>পোস্ট তৈরি করুন</h2>
+        <form id="postForm">
+            <textarea id="postText" placeholder="কিছু লিখুন..." required></textarea>
+            <input type="file" id="postImage" accept="image/*">
+            <button type="submit">পোস্ট করুন</button>
+        </form>
+
+        <h2>আমার পোস্টসমূহ</h2>
+        <div id="posts" class="posts-container"></div>
+    </section>
+
+    <footer>
+        <h4>Developed By Ramin , Saifullah, Nazmul </h4>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
