@@ -1,0 +1,561 @@
+/*
+ * ----------------------------------------------------
+ * @font-face rules for custom fonts
+ * ----------------------------------------------------
+ */
+
+/* শিরোনামের জন্য (For Headings & Buttons) */
+@font-face {
+    font-family: 'Hind Siliguri';
+    src: url('./fonts/HindSiliguri-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* সাধারণ লেখার জন্য (For Paragraphs) */
+@font-face {
+    font-family: 'Noto Sans Bengali';
+    src: url('./fonts/NotoSansBengali-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/*
+ * ----------------------------------------------------
+ * General styles and font application
+ * ----------------------------------------------------
+ */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji';
+}
+
+body {
+    background: #f5f9f6;
+    color: #333;
+    font-family: 'Noto Sans Bengali', sans-serif;
+    /* UPDATE: Default font for all paragraphs */
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Hind Siliguri', sans-serif;
+    /* UPDATE: Heading font applied */
+    font-weight: 700;
+}
+
+/* Header */
+header {
+    background: #0d7c5f;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2.9rem;
+}
+
+nav .btn {
+    background: #1b8571;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-left: 10px;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-family: 'Hind Siliguri', sans-serif;
+    /* UPDATE: Button font applied and invalid 'src' removed */
+    font-weight: 500;
+}
+
+nav .btn:hover {
+    background: #388e3c;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: 890px;
+    object-fit: cover;
+    filter: brightness(80%);
+}
+
+.hero-text {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-text h2 {
+    font-size: 2.3rem;
+    margin-bottom: 10px;
+}
+
+.big-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    font-size: 1rem;
+    background: #20b9c4;
+    border-radius: 10px;
+    font-family: 'Hind Siliguri', sans-serif;
+    /* UPDATE: Button font applied for consistency */
+}
+
+.big-btn:hover {
+    background: #10e52c;
+}
+
+/* Forms */
+.form-container {
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 25px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.7s ease-in-out;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2e7d32;
+}
+
+/* UPDATE: Form inputs and selects will correctly inherit 'Noto Sans Bengali' */
+form input,
+form select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    transition: border 0.3s;
+    font-family: 'Noto Sans Bengali', sans-serif;
+}
+
+form input:focus,
+form select:focus {
+    border: 1px solid #2e7d32;
+    outline: none;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    /* Slightly increased for better look */
+    cursor: pointer;
+    transition: background 0.3s;
+    font-family: 'Hind Siliguri', sans-serif;
+    /* UPDATE: Button font applied */
+}
+
+form button:hover {
+    background: #1b5e20;
+}
+
+form p {
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    padding: 15px;
+    height: 90px;
+    background: #181616;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Dashboard */
+.dashboard-main {
+    padding: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.user-info-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.user-info-section h2 {
+    font-size: 2.5rem;
+    color: #1b5e20;
+    margin-bottom: 10px;
+}
+
+.user-info-section p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    position: relative;
+    height: 180px;
+    overflow: hidden;
+}
+
+.card-header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card-header h3 {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1.4rem;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card p {
+    padding: 15px;
+    font-size: 15px;
+    color: #555;
+    flex-grow: 1;
+}
+
+/* Weather Section Styles */
+.weather-info-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    padding: 15px;
+}
+
+.temp-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.weather-info-main .temp {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    font-family: 'Hind Siliguri', sans-serif;
+    /* UPDATE: Applied for a clean numerical display */
+}
+
+.weather-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.weather-info-main .details {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9em;
+    color: #555;
+    text-align: left;
+}
+
+#hourly-forecast-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px 0;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    border-top: 1px solid #ccc;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.daily-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    min-width: 80px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.daily-card .weather-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.daily-card .temp-range {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 5px;
+}
+
+/* News Feed */
+.news-card {
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    padding: 15px;
+    margin-bottom: 15px;
+    transition: transform 0.2s;
+}
+
+.news-card:hover {
+    transform: translateY(-2px);
+}
+
+.news-card h4 {
+    color: #2e7d32;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+    /* Slightly larger for better readability */
+}
+
+.news-card p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.4;
+    padding: 0;
+}
+
+/* Profile Page */
+.profile-container {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 25px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#profilePhoto {
+    border-radius: 50%;
+    border: 3px solid #2e7d32;
+    margin-bottom: 15px;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.profile-card h3 {
+    color: #2e7d32;
+    margin-bottom: 10px;
+}
+
+.profile-card p {
+    color: #555;
+    margin: 5px 0;
+}
+
+.profile-picture-upload {
+    margin-top: 10px;
+}
+
+.profile-picture-upload .btn {
+    background: #66bb6a;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Hind Siliguri', sans-serif;
+    /* UPDATE: Button font applied */
+}
+
+.profile-picture-upload .btn:hover {
+    background: #388e3c;
+}
+
+/* Post Form */
+#postForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#postForm textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    resize: vertical;
+    font-family: 'Noto Sans Bengali', sans-serif;
+    /* UPDATE: Explicitly set for textarea */
+}
+
+#postForm button {
+    width: 100%;
+    padding: 12px;
+    background: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-family: 'Hind Siliguri', sans-serif;
+    /* UPDATE: Button font applied */
+}
+
+/* Posts Display on Profile and Index pages */
+.posts-container {
+    margin-top: 20px;
+}
+
+.post {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #eee;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    color: #888;
+}
+
+.delete-btn {
+    background: #d32f2f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Hind Siliguri', sans-serif;
+    /* UPDATE: Button font applied */
+}
+
+.delete-btn:hover {
+    background: #b71c1c;
+}
+
+.post-user {
+    font-weight: bold;
+    color: #2e7d32;
+    font-family: 'Hind Siliguri', sans-serif;
+    /* UPDATE: Font for usernames */
+}
+
+.post p {
+    color: #333;
+}
+
+.post-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+}
+
+.community-posts-section {
+    padding: 30px;
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+/* Logo Styles */
+.header-logo {
+    height: 80px;
+    display: block;
+}
+
+.logo-container {
+    display: flex;
+    margin-left: 100px;
+}
+
+
+/* 20255 */
